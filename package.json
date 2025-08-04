@@ -2,6 +2,7 @@
   "name": "myulibraryapp-client",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:8000",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.6.4",
@@ -10,9 +11,15 @@
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.126",
     "@types/react": "^19.1.9",
+    "@types/react-bootstrap": "^1.0.1",
     "@types/react-dom": "^19.1.7",
+    "@types/react-router-dom": "^5.3.3",
+    "axios": "^1.11.0",
+    "jwt-decode": "^4.0.0",
     "react": "^19.1.1",
+    "react-bootstrap": "^2.10.10",
     "react-dom": "^19.1.1",
+    "react-router-dom": "^7.7.1",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
