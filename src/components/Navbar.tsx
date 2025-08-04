@@ -22,13 +22,13 @@ const CustomNavbar: React.FC = () => {
             <Nav.Link as={Link} to="/">Books</Nav.Link>
             
             {isAuthenticated && user?.user_type === 'student' && (
-              <Nav.Link as={Link} to="/checkouts">My Checkouts</Nav.Link>
+              <Nav.Link as={Link} to="/my-checkouts">My Checkouts</Nav.Link>
             )}
             
             {isAuthenticated && user?.user_type === 'librarian' && (
               <>
                 <Nav.Link as={Link} to="/users">Users</Nav.Link>
-                <Nav.Link as={Link} to="/checkouts">Checkouts</Nav.Link>
+                <Nav.Link as={Link} to="/checkouts">Checkouts Management</Nav.Link>
               </>
             )}
           </Nav>

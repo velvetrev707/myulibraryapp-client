@@ -40,7 +40,7 @@ const BookDetailPage: React.FC = () => {
     try {
       await api.post(`/books/${id}/checkout/`);
       alert('Book checked out successfully!');
-      navigate('/checkouts');
+      navigate('/my-checkouts');
     } catch (err) {
       setError('Failed to checkout book');
     }

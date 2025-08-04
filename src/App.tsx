@@ -26,7 +26,7 @@ function App() {
           
           {/* Student-only routes */}
           <Route element={<ProtectedRoute allowedRoles={['student']} />}>
-            <Route path="/checkouts" element={<UserCheckoutsPage />} />
+            <Route path="/my-checkouts" element={<UserCheckoutsPage />} />
           </Route>
           
           {/* Librarian-only routes */}
