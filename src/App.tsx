@@ -8,6 +8,7 @@ import BookDetailPage from './pages/BookDetailPage';
 import UserCheckoutsPage from './pages/UserCheckoutsPage';
 import CheckoutManagementPage from './pages/CheckoutManagementPage';
 import UserManagementPage from './pages/UserManagementPage';
+import AddBookPage from './pages/AddBookPage';
 import Navbar from './components/Navbar';
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           
           {/* Librarian-only routes */}
           <Route element={<ProtectedRoute allowedRoles={['librarian']} />}>
+            <Route path="/add-book" element={<AddBookPage />} />
             <Route path="/users" element={<UserManagementPage />} />
             <Route path="/checkouts" element={<CheckoutManagementPage />} />
           </Route>

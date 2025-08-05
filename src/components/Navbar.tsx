@@ -27,6 +27,7 @@ const CustomNavbar: React.FC = () => {
             
             {isAuthenticated && user?.user_type === 'librarian' && (
               <>
+                <Nav.Link as={Link} to="/add-book">Add Book</Nav.Link>
                 <Nav.Link as={Link} to="/users">Users</Nav.Link>
                 <Nav.Link as={Link} to="/checkouts">Checkouts Management</Nav.Link>
               </>
